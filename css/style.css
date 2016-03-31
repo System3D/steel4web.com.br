@@ -184,11 +184,18 @@ a {
 /* =========================== END ANIMATIONS ===================== */
 
 /* =========================== START HEADER SECTION ===================== */
+.sticky-wrapper{
+    position: absolute;
+    /* display: block; */
+    top: 0;
+    width: 100%;
+}
 .header-black {
     z-index: 100;
     position: relative;
-    background: #333;
-    padding: 45px 0;
+/*     background: #333; */
+    background: rgba(0,0,0,0.8);
+    padding: 35px 0;
     border-bottom: 3px solid;
 }
 .header-black .logo a {
@@ -782,6 +789,12 @@ a {
 }
 /* =========================== END COMMENTS SECTION ===================== */
 
+/* =========================== CONTENT SECTION ===================== */
+.content{
+    top: 0;
+}
+/* =========================== CONTENT SECTION ===================== */
+
 /* =========================== START SLIDER SECTION ===================== */
 .home-page .slider-section {
     margin-bottom: 0px;
@@ -812,7 +825,7 @@ a {
     position: absolute;
     z-index: 13;
     max-width: 1140px;
-    margin: 350px auto 0;
+    margin: 400px auto 0;
     left: 0;
     text-align: center;
     right: 0;

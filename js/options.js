@@ -266,25 +266,26 @@ var aWP = {
   settings: {
 
     scripts: [
-      // 'js/plugins/queryloader.js', 
-      // 'js/plugins/easing.js',
-      'js/plugins/sticky.js',
-      // 'js/plugins/viewport.js',
-      // 'js/plugins/magnific-popup.js',
-      // 'js/plugins/bigslide.js',
-      // 'js/plugins/enquire.js',
-      // 'js/plugins/jquery.finger.js',
-      // 'js/plugins/simple-slider.js',
-      // 'js/plugins/knob.js',
-      // 'js/plugins/fitvids.js',
-      // 'js/plugins/masonry.pkgd.min.js',
-      // 'js/plugins/classie.js',
-      // 'js/plugins/imagesloaded.js',
-      // 'js/plugins/AnimOnScroll.js',
-      // 'js/plugins/tubular.js',
-      // 'js/plugins/swipebox.js',
-      // 'js/plugins/scrolld.js',
-      // 'js/plugins/appear.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/queryloader.js', 
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/easing.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/sticky.js',
+      'wp-content/themes/steel4web-wp-theme/js/plugins/jquery.sticky.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/viewport.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/magnific-popup.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/bigslide.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/enquire.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/jquery.finger.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/simple-slider.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/knob.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/fitvids.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/masonry.pkgd.min.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/classie.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/imagesloaded.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/AnimOnScroll.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/tubular.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/swipebox.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/scrolld.js',
+      // 'wp-content/themes/steel4web-wp-theme/js/plugins/appear.js',
     ]
 
   },
@@ -318,7 +319,7 @@ var aWP = {
 
         complete: function () {
           if ( !window.jQuery ) {
-                Modernizr.load('js/jquery.js');
+                Modernizr.load('wp-content/themes/steel4web-wp-theme/js/jquery.js');
           }
           var scripts = [];
           $.each(aWP.settings.scripts,function(index,script){
@@ -338,7 +339,7 @@ var aWP = {
     
   sticky: function () {
     if($('.sticky-bar').length) {
-      $(".sticky-bar").sticky({topSpacing:0});       
+      $(".sticky-bar").sticky({topSpacing:0});    
     }
   },
 
