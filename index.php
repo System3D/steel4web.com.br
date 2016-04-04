@@ -3,10 +3,10 @@
     
 <head>
         <meta charset="utf-8" />
-        <title>Rhyno</title>
+        <title>Steel4Web</title>
         <meta name="description" content="Here goes description" />
         <meta name="author" content="author name" />
-        <link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory'); ?>/images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory'); ?>/images/favicon.png" type="image/png"/>
         <!-- ======================================================================
                                     Mobile Specific Meta
         ======================================================================= -->
@@ -19,14 +19,15 @@
         <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/style.css" rel="stylesheet" />
         <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/animate.css" rel="stylesheet" />
         <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/font-awesome.css" rel="stylesheet" />
+        <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/ionicons.min.css" rel="stylesheet" />
         <link href="<?php echo bloginfo('stylesheet_directory'); ?>/color-box/color-style.css" rel="stylesheet" />
         <link href="<?php echo bloginfo('stylesheet_directory'); ?>/color-box/farbtastic/farbtastic.css" rel="stylesheet" />
     </head>
     <body class="home-page">
         <div class="load-complete">
             <div class="load-position">
-                <div class="logo"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo"/>Rhyno</div>
-                <h6>Please wait, loading...</h6>
+                <div class="logo"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo_dark.png" alt="logo"/></div>
+                <h6>Carregando. Um minuto por favor...</h6>
                 <div class="loading">
                     <div class="loading-line"></div>
                     <div class="loading-break loading-dot-1"></div>
@@ -70,13 +71,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="logo"><a href="<?php echo bloginfo('url'); ?>"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo"/>RHYNO</a></div>
+                            <div class="logo"><a href="<?php echo bloginfo('url'); ?>"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo"/></a></div>
                         </div>
                         <div class="col-md-9">
                             <nav class="menu">
                                 <div class="responsive-menu d-text-c-h"><i class="fa fa-bars"></i></div>
                                 <ul>
-                                    <li class="active"><a class="d-text-c-h" data-anchor="slider-section" href="#">Home<span>/</span></a>
+                                    <li class="active"><a class="d-text-c-h" data-anchor="slider-section" href="#">Home</a>
                                         <ul>
                                             <li><a class="d-text-c-h" href="index-2.html">Homepage</a></li>
                                             <li><a class="d-text-c-h" href="index-animations.html">Homepage with animations</a></li>
@@ -84,38 +85,27 @@
                                             <li><a class="d-text-c-h" href="index-header-2.html">Homepage heaver v2</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="d-text-c-h" data-anchor="about-section" href="#">About<span>/</span></a></li>
-                                    <li><a class="d-text-c-h" data-anchor="team-section" href="#">Team<span>/</span></a></li>
-                                    <li><a class="d-text-c-h" data-anchor="portfolio-section" href="#">Works<span>/</span></a>
-                                        <ul>
-                                            <li><a class="d-text-c-h" href="project.html">Single project</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="d-text-c-h" data-anchor="blog-section" href="#">Blog<span>/</span></a>
+                                    <li><a class="d-text-c-h" data-anchor="engenharia-section" href="#">Engenharia</a></li>
+                                    <li><a class="d-text-c-h" data-anchor="producao-section" href="#">Produção</a></li>
+                                    <li><a class="d-text-c-h" data-anchor="logistica-section" href="#">Logística</a></li>
+                                    <li><a class="d-text-c-h" data-anchor="montagem-section" href="#">Montagem</a></li>
+                                    <li><a class="d-text-c-h" data-anchor="blog-section" href="#">Blog</a></li>                                    
+                                    <!-- <li><a class="d-text-c-h" data-anchor="blog-section" href="#">Blog</a>
                                         <ul>
                                             <li><a class="d-text-c-h" href="blog.html">Blog with sidebar</a></li>
                                             <li><a class="d-text-c-h" href="post.html">Blog post</a></li>
                                         </ul>
-                                    </li>
-                                    <li><a class="d-text-c-h" data-anchor="shop-section" href="#">Shop<span>/</span></a>
-                                        <ul>
-                                            <li><a class="d-text-c-h" href="shop.html">Shop</a></li>
-                                            <li><a class="d-text-c-h" href="shop-item.html">Shop Item</a></li>
-                                            <li><a class="d-text-c-h" href="cart.html">Cart</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="d-text-c-h" data-anchor="contact-section" href="#">Contact</a></li>
-                                    <li>
-                                        <!-- SEARCH FORM -->
+                                    </li>                                     -->
+                                    <li><a class="d-text-c-h" data-anchor="contact-section" href="#">Contato</a></li>
+<!--                                     <li>
                                         <i class="fa fa-search d-text-c"></i>
                                         <form class="search-form">
                                             <input type="text" name="s" class="search-line" placeholder="Search...">
                                             <input type="submit" value="" class="search-button">
                                             <i class="fa fa-search d-text-c"></i>
                                         </form>
-                                        <!-- SEARCH FORM -->
                                     </li>
-                                </ul>
+ -->                            </ul>
                             </nav>
                         </div>
                     </div>
@@ -125,8 +115,44 @@
 
             <!-- === START CONTENT === -->
             <div class="content">
+              
+                <!-- === START VIDEO SECTION === -->
+                <section class="video-section" id="video-section">
+
+                    <div class="slide-text">
+                        <h2 class="wow flip d-text-c-s animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s;">
+                            <span>4D</span> + <span>WEB</span>
+                            <br/>
+                        </h2>
+                        <h3 class="wow pulse animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: pulse;">A maneira mais simples e eficaz de gestão e acompanhamento da estrutura metálica</h3>
+                        <!-- <h4 class="wow pulse animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: pulse;">Você não vai acreditar, eu acho</h4>      -->
+
+                        <div class="text-center">                            
+                            <a href="#" class="btn btn-primary btn-lg">Veja em ação</a>
+                            &nbsp;                                                            
+                            <a href="#" class="btn btn-primary btn-lg">Solicite demonstração</a>                            
+                        </div>
+
+                    </div>
+
+                    <div class="bg-cover">
+                    </div>
+
+                    <video class="bg" preload="auto" autoplay="true" loop="true" muted="true">
+                        <source src="<?php echo bloginfo('stylesheet_directory'); ?>/videos/home_bg.mp4" type="video/mp4">
+                    </video>
+
+
+                    <span class="intro-icon">
+                        <a data-scroll-reveal="enter from the bottom after 0.3s" href="#" data-anchor="about-section" data-scroll-reveal-id="1" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><i class="fa fa-angle-down"></i></a>
+                    </span>
+
+                    <!-- <iframe src="https://www.youtube.com/embed/u9HUCWurNcY?autoplay=1&amp;controls=0&amp;loop=1&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp;list=PL1yyP-uh7GHDamwnD41RluCEJ0aNAk_Wl" frameborder="0"></iframe> -->
+                </section>
+
+
                 <!-- === START SLIDER SECTION === -->
-                <section class="slider-section" id="slider-section">
+                <!-- <section class="slider-section" id="slider-section">
                     <div class="slider" data-theme-plugin="slider" data-theme-item=".slide" data-theme-next=".slide-right" data-theme-prev=".slide-left" data-theme-container=".slide-wrapper">
                         <ul class="slider-arrows">
                             <li class="slide-left"><i class="fa fa-angle-left"></i></li>
@@ -163,7 +189,7 @@
                             <li class="d-border-c-h"></li>
                         </ul>
                     </div>
-                </section>
+                </section> -->
                 <!-- === END SLIDER SECTION === -->
 
                 <!-- === START ABOUT === -->
@@ -172,8 +198,8 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="site-title-2">
-                                    <h1 class="d-text-c">Get to Know Us</h1>
-                                    <h2>About</h2>
+                                    <h1 class="d-text-c">Conheça o app</h1>
+                                    <h2>Steel4web</h2>
                                     <h3><span class="d-bg-c"></span>Vix rebum oblique laboramus ad, prompta reprimique ea eos copiosae appellantur, prompta reprimique. </h3>
                                 </div>
                             </div>
@@ -181,13 +207,14 @@
                                 <div class="about-box-2">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-1a.jpg" alt="about img" />            
+                                            <!-- <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-1a.jpg" alt="about img" />             -->
+                                            <img src="http://placehold.it/370x260" alt="about img" /> 
                                         </div>
                                         <div class="col-md-6">
                                             <div class="about-box-2-name">
                                                 <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-i1.png" alt="icon" class="icon-a d-bg-c" />
-                                                <h1>Product Visual<br/>identity</h1>
-                                                <h6>Branding</h6>
+                                                <h1>Acompanhamento<br/>em tempo real</h1>
+                                                <h6>Todos os estágios de produção atualizados contínuamente (?)</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -197,26 +224,28 @@
                                         <div class="col-md-6">
                                             <div class="about-box-2-name-2">
                                                  <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-i2.png" alt="icon" class="icon-a d-bg-c" />
-                                                <h1>advanced web<br/>development</h1>
+                                                <h1>Gestão visual com<br/>Comunicação ágil</h1>
                                                 <h6>IT / Web</h6>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-2a.jpg" alt="about img" /> 
+                                            <!-- <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-2a.jpg" alt="about img" />  -->
+                                            <img src="http://placehold.it/370x260" alt="about img" /> 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="about-box-2">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-3a.jpg" alt="about img" />
+                                            <!-- <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-3a.jpg" alt="about img" /> -->
+                                            <img src="http://placehold.it/370x260" alt="about img" />
                                         </div>
                                         <div class="col-md-6">
                                             <div class="about-box-2-name">
                                                 <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/about-i3.png" alt="icon" class="icon-a d-bg-c" />
-                                                <h1>modern graphic<br/>
-                                                design</h1>
-                                                <h6>Design</h6>
+                                                <h1>Visualização 3D<br/>
+                                                de projetos</h1>
+                                                <h6>Veja os seus projetos em 3D atravéz do próprio navegador.</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -227,46 +256,361 @@
                 </div>
                 <!-- === END ABOUT === -->
 
+                <!-- <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                                    <button type="button" class="btn btn-default btn-lg">Large button</button>
+                                </p>
+                                <p>
+                                    <button type="button" class="btn btn-primary">Default button</button>
+                                    <button type="button" class="btn btn-default">Default button</button>
+                                </p>
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                                    <button type="button" class="btn btn-default btn-sm">Small button</button>
+                                </p>
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                                    <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <button type="button" class="btn btn-default">Default</button>
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-link">Link</button>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
                 <!-- === START STATISTICS === -->
                 <div class="statistics-section statistics-section-2">
                     <div class="bg-cover">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="statistic">
-                                        <span class="divide"></span>
-                                        <h3><span class="counter-all">36</span></h3>
-                                        <h6>awards</h6>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="statistic">
-                                        <span class="divide"></span>
-                                        <h3><span class="counter-all">53</span></h3>
-                                        <h6>projects</h6>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="statistic">
-                                        <span class="divide"></span>
-                                        <h3><span class="counter-all">346</span></h3>
-                                        <h6>clients</h6>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="statistic">
-                                        <h3><span class="counter-all">89</span></h3>
-                                        <h6>concepts</h6>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="container text-center">
+                            <h1>Eleve sua empresa e processos à outro nível!</h1>
+                            <h2>Entenda as suas vantagens</h2>
                         </div>
                     </div>
                 </div>
                 <!-- === END STATISTICS === -->
 
+
+                <!-- === START PRODUCT === -->
+                <div class="product-section" id="engenharia-section">
+                    <div class="container">
+                        <div class="col-md-6">
+
+                            <div class="site-title-2">
+                                <h1 class="d-text-c">ENGENHARIA</h1>
+                                <h3>Recursos para os estágios de <strong>ENGENHARIA</strong> e <strong>PLANEJAMENTO</strong></h3>
+                                <!-- <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3> -->
+                            </div>
+
+                            <!-- <h3>One Day With Us</h3> -->
+                            <br/>
+                            <div class="features panel-group" id="engenharia-section-features">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#engenharia-section-features" href="#engenharia-section-collapse-1" class="collapsed">Recurso 1</a>
+                                        </h4>
+                                    </div>
+                                    <div id="engenharia-section-collapse-1" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#engenharia-section-features" href="#engenharia-section-collapse-2">Recurso 2</a>
+                                        </h4>
+                                    </div>
+                                    <div id="engenharia-section-collapse-2" class="panel-collapse collapse in" style="height: auto;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#engenharia-section-features" href="#engenharia-section-collapse-3" class="collapsed">Recurso 3</a>
+                                        </h4>
+                                    </div>
+                                    <div id="engenharia-section-collapse-3" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#engenharia-section-features" href="#engenharia-section-collapse-4" class="collapsed">Recurso 4</a>
+                                        </h4>
+                                    </div>
+                                    <div id="engenharia-section-collapse-4" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="d-text-c">&nbsp;</h1>
+                            <h2>&nbsp;</h2>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ghA_gI0oe7M?list=PL1yyP-uh7GHDamwnD41RluCEJ0aNAk_Wl&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                            <br>
+                            <br>
+
+                            <div class="site-title-2">
+                                <h2>Muitos recursos para você</h2>
+                                <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- === END PRODUCT === -->
+
+
+                <!-- === START PRODUCT === -->
+                <div class="product-section bg-grey" id="producao-section">
+                    <div class="container">
+                        <div class="col-md-6">
+
+                            <div class="site-title-2">
+                                <h1 class="d-text-c">PRODUÇÃO</h1>
+                                <h3>Recursos para os estágios de <strong>PCP</strong> e <strong>PRODUÇÃO</strong></h3>
+                                <!-- <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3> -->
+                            </div>
+
+                            <!-- <h3>One Day With Us</h3> -->
+                            <br/>
+                            <div class="features panel-group" id="producao-section-features">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#producao-section-features" href="#producao-section-collapse-1" class="collapsed">Recurso 1</a>
+                                        </h4>
+                                    </div>
+                                    <div id="producao-section-collapse-1" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#producao-section-features" href="#producao-section-collapse-2">Recurso 2</a>
+                                        </h4>
+                                    </div>
+                                    <div id="producao-section-collapse-2" class="panel-collapse collapse in" style="height: auto;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#producao-section-features" href="#producao-section-collapse-3" class="collapsed">Recurso 3</a>
+                                        </h4>
+                                    </div>
+                                    <div id="producao-section-collapse-3" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#producao-section-features" href="#producao-section-collapse-4" class="collapsed">Recurso 4</a>
+                                        </h4>
+                                    </div>
+                                    <div id="producao-section-collapse-4" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="d-text-c">&nbsp;</h1>
+                            <h2>&nbsp;</h2>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ghA_gI0oe7M?list=PL1yyP-uh7GHDamwnD41RluCEJ0aNAk_Wl&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                            <br>
+                            <br>
+
+                            <div class="site-title-2">
+                                <h2>Muitos recursos para você</h2>
+                                <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- === END PRODUCT === -->
+
+
+                <!-- === START PRODUCT === -->
+                <div class="product-section" id="logistica-section">
+                    <div class="container">
+                        <div class="col-md-6">
+
+                            <div class="site-title-2">
+                                <h1 class="d-text-c">LOGÍSTICA</h1>
+                                <h3>Recursos para os estágios de <strong>LOGÍSTICA</strong></h3>
+                                <!-- <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3> -->
+                            </div>
+
+                            <!-- <h3>One Day With Us</h3> -->
+                            <br/>
+                            <div class="features panel-group" id="logistica-section-features">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#logistica-section-features" href="#logistica-section-collapse-1" class="collapsed">Recurso 1</a>
+                                        </h4>
+                                    </div>
+                                    <div id="logistica-section-collapse-1" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#logistica-section-features" href="#logistica-section-collapse-2">Recurso 2</a>
+                                        </h4>
+                                    </div>
+                                    <div id="logistica-section-collapse-2" class="panel-collapse collapse in" style="height: auto;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#logistica-section-features" href="#logistica-section-collapse-3" class="collapsed">Recurso 3</a>
+                                        </h4>
+                                    </div>
+                                    <div id="logistica-section-collapse-3" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#logistica-section-features" href="#logistica-section-collapse-4" class="collapsed">Recurso 4</a>
+                                        </h4>
+                                    </div>
+                                    <div id="logistica-section-collapse-4" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="d-text-c">&nbsp;</h1>
+                            <h2>&nbsp;</h2>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ghA_gI0oe7M?list=PL1yyP-uh7GHDamwnD41RluCEJ0aNAk_Wl&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                            <br>
+                            <br>
+
+                            <div class="site-title-2">
+                                <h2>Muitos recursos para você</h2>
+                                <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- === END PRODUCT === -->
+
+                    <!-- === START PRODUCT === -->
+                <div class="product-section bg-grey" id="montagem-section">
+                    <div class="container">
+                        <div class="col-md-6">
+
+                            <div class="site-title-2">
+                                <h1 class="d-text-c">MONTAGEM</h1>
+                                <h3>Recursos para os estágios de <strong>EXPEDIÇÃO</strong> e <strong>MONTAGEM</strong></h3>
+                                <!-- <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3> -->
+                            </div>
+
+                            <!-- <h3>One Day With Us</h3> -->
+                            <br/>
+                            <div class="features panel-group" id="montagem-section-features">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#montagem-section-features" href="#montagem-section-collapse-1" class="collapsed">Recurso 1</a>
+                                        </h4>
+                                    </div>
+                                    <div id="montagem-section-collapse-1" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#montagem-section-features" href="#montagem-section-collapse-2">Recurso 2</a>
+                                        </h4>
+                                    </div>
+                                    <div id="montagem-section-collapse-2" class="panel-collapse collapse in" style="height: auto;">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#montagem-section-features" href="#montagem-section-collapse-3" class="collapsed">Recurso 3</a>
+                                        </h4>
+                                    </div>
+                                    <div id="montagem-section-collapse-3" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#montagem-section-features" href="#montagem-section-collapse-4" class="collapsed">Recurso 4</a>
+                                        </h4>
+                                    </div>
+                                    <div id="montagem-section-collapse-4" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="d-text-c">&nbsp;</h1>
+                            <h2>&nbsp;</h2>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ghA_gI0oe7M?list=PL1yyP-uh7GHDamwnD41RluCEJ0aNAk_Wl&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                            <br>
+                            <br>
+
+                            <div class="site-title-2">
+                                <h2>Muitos recursos para você</h2>
+                                <h3><span class="d-bg-c"></span>Para cada lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod ratione cumque, molestiae minus.</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- === END PRODUCT === -->
+
+
                 <!-- === START WHYUS === -->
-                <div class="whyus-section" id="whyus-section">
+               <!--  <div class="whyus-section" id="whyus-section">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
@@ -289,486 +633,43 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- === END WHYUS === -->
 
                 <!-- === START CLIENTS === -->
                 <div class="clients-section d-bg-c" id="clients-section">
                     <div class="container">
+                        <h1 class="text-center">Utilizado por "grandes" empresas</h1>
+                        <h3 class="text-center">Conheça alguns clientes:</h3>
+                        <br>
+                        <br>
                         <div class="row">
-                            <div class="col-md-2 no-padding">
-                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-1a.png" alt="clinets" /></a>
+                            <!-- <div class="col-md-2 no-padding">
+                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-1a.png" alt="clients"/></a>
+                            </div> -->
+                            <div class="col-md-3">
+                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients/metalfoort.png" alt="clients" class="img-responsive"/></a>
                             </div>
-                            <div class="col-md-2 no-padding">
-                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-2a.png" alt="clinets" /></a>
+                            <div class="col-md-3">
+                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients/demuth.png" alt="clients" class="img-responsive"/></a>
                             </div>
-                            <div class="col-md-2 no-padding">
-                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-3a.png" alt="clinets" /></a>
+                            <div class="col-md-3">
+                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients/google.png" alt="clients" class="img-responsive"/></a>
                             </div>
-                            <div class="col-md-2 no-padding">
-                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-4a.png" alt="clinets" /></a>
+                           <!--  <div class="col-md-3">
+                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-4a.png" alt="clients" class="img-responsive"/></a>
+                            </div> -->
+                            <div class="col-md-3">
+                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients/facebook.png" alt="clients" class="img-responsive"/></a>
                             </div>
-                            <div class="col-md-2 no-padding">
-                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-5a.png" alt="clinets" /></a>
-                            </div>
-                            <div class="col-md-2 no-padding">
-                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-6a.png" alt="clinets" /></a>
-                            </div>
+                            <!-- <div class="col-md-3">
+                                <a href="#"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/clients-6a.png" alt="clients"/></a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <!-- === END CLIENTS === -->
 
-                <!-- === START TEAM === -->
-                <div class="team-section dark-side" id="team-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="site-title-2">
-                                    <h1 class="d-text-c">Who We Are?</h1>
-                                    <h2>Our Team</h2>
-                                    <h3><span class="d-bg-c"></span>Vix rebum oblique laboramus ad, prompta reprimique ea eos copiosae appellantur, prompta reprimique. </h3>
-                                </div>
-                            </div>
-                            <div class="col-md-8 white-side">
-                                <div class="slider" data-theme-plugin="slider" data-theme-item=".slide" data-theme-next=".slide-right" data-theme-prev=".slide-left" data-theme-container=".slide-wrapper">
-                                    <ul class="slide-wrapper">
-                                        <li class="slide">
-                                            <div class="team-member">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/member-1.jpg" alt="member" />
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <h3>Andrea clark</h3>
-                                                        <h6>Designer</h6>
-                                                        <p>Quo et sale facete disputando, ne causae option gloriatur  Ex sea latine gubergren, te minim novum sapientem iusmei. Ex sea latine gubergren, te minim novum sapientem ius.</p>
-                                                        <ul class="socials">
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-instagram"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-google-plus"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="slide">
-                                            <div class="team-member">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/member-2.jpg" alt="member" />
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <h3>Agelica Morvis</h3>  
-                                                        <h6>Art Director</h6>
-                                                        <p>Quo et sale facete disputando, ne causae option gloriatur  Ex sea latine gubergren, te minim novum sapientem iusmei. Ex sea latine gubergren, te minim novum sapientem ius.</p>
-                                                        <ul class="socials">
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-instagram"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-google-plus"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="slide">
-                                            <div class="team-member">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/member-3.jpg" alt="member" />
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <h3>Sarah Doen</h3>
-                                                        <h6>Marketing Manager</h6>
-                                                        <p>Quo et sale facete disputando, ne causae option gloriatur Ex sea latine gubergren, te minim novum sapientem ius mei. Ex sea latine gubergren, te minim novum sapientem ius.</p>
-                                                        <ul class="socials">
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-instagram"></i></a></li>
-                                                            <li><a href="#"><i class="fa d-text-c-h fa-google-plus"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <ul class="slider-dots" data-theme-plugin="bullets">
-                                        <li class="d-bg-c"></li>
-                                        <li class="d-bg-c"></li>
-                                        <li class="d-bg-c"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- === END TEAM === -->  
-
-                <!-- === START CUSTOM === -->
-                <div class="custom-section" id="custom-section">
-                    <div class="container">
-                        <div class="col-md-6">
-                            <h3>One Day With Us</h3>
-                            <br/>
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-1" class="collapsed">Our mission</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collaps-1" class="panel-collapse collapse" style="height: 0px;">
-                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-2">our vision</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collaps-2" class="panel-collapse collapse in" style="height: auto;">
-                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-3" class="collapsed">our values</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collaps-3" class="panel-collapse collapse">
-                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Skills We've Got</h3>
-                            <br/>
-                            <div class="skill-one">
-                                <h5>WordPress</h5>
-                                <h6><span class="counter-all">80</span>%</h6>
-                                <div class="skill-one-bg">
-                                    <span class="d-bg-c wow bounceInLeft" data-wow-duration="3s" style="width: 80%;"></span>
-                                </div>
-                            </div>
-                            <div class="skill-one">
-                                <h5>Photoshop</h5>
-                                <h6><span class="counter-all">90</span>%</h6>
-                                <div class="skill-one-bg">
-                                    <span class="d-bg-c wow bounceInLeft" data-wow-duration="3s" style="width: 90%;"></span>
-                                </div>
-                            </div>
-                            <div class="skill-one">
-                                <h5>HTML</h5>
-                                <h6><span class="counter-all">66</span>%</h6>
-                                <div class="skill-one-bg">
-                                    <span class="d-bg-c wow bounceInLeft" data-wow-duration="3s" style="width: 66%;"></span>
-                                </div>
-                            </div>
-                            <div class="skill-one">
-                                <h5>PHP</h5>
-                                <h6><span class="counter-all">76</span>%</h6>
-                                <div class="skill-one-bg">
-                                    <span class="d-bg-c wow bounceInLeft" data-wow-duration="3s" style="width: 76%;"></span>
-                                </div>
-                            </div>
-                            <div class="skill-one">
-                                <h5>Illustrator</h5>
-                                <h6><span class="counter-all">85</span>%</h6>
-                                <div class="skill-one-bg">
-                                    <span class="d-bg-c wow bounceInLeft" data-wow-duration="3s" style="width: 85%;"></span>
-                                </div>
-                            </div>
-                            <div class="skill-one">
-                                <h5>SEO</h5>
-                                <h6><span class="counter-all">70</span>%</h6>
-                                <div class="skill-one-bg">
-                                    <span class="d-bg-c wow bounceInLeft" data-wow-duration="3s" style="width: 70%;"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- === END CUSTOM === -->
-
-                <!-- === START PORTFOLIO === -->
-                <div class="portfolio-section portfolio-section-2" id="portfolio-section">
-                    <div class="dark-side">
-                        <div class="container our-portfolio">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="site-title-2">
-                                        <h1 class="d-text-c">Who We Are Doing?</h1>
-                                        <h2>Our Works</h2>
-                                        <h3><span class="d-bg-c"></span>Vix rebum oblique laboramus ad, prompta reprimique ea eos copiosae appellantur, prompta reprimique. </h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 white-side">
-                                    <ul class="our-portfolio-filter" data-theme-plugin="filters">
-                                        <li><a data-category="" class="d-text-c-h active" href="#">All</a></li>
-                                        <li><a data-category="fashion" class="d-text-c-h" href="#">Fashion</a></li>
-                                        <li><a data-category="print" class="d-text-c-h" href="#">Print</a></li>
-                                        <li><a data-category="photography" class="d-text-c-h" href="#">Photograpy</a></li>
-                                        <li><a data-category="abstract" class="d-text-c-h" href="#">Abstract</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" data-theme-plugin="masonry">
-                        <div class="col-md-3 no-padding fashion">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-hover show-it">
-                                    <h3><a href="#" class="d-text-c-h">Modeling With The Best</a></h3>
-                                    <p>Fashion</p><br/>
-                                    <p><span class="d-text-c">Client</span> Robotic Enterprises</p>
-                                    <p><span class="d-text-c">Budget</span> $5400</p>
-                                </div>
-                                <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio-1a.jpg" alt="portfolio" />
-                            </div>
-                        </div>
-                        <div class="col-md-3 no-padding abstract">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-hover show-it">
-                                    <h3><a href="#" class="d-text-c-h">Town Traffic</a></h3>
-                                    <p>Abstract</p><br/>
-                                    <p><span class="d-text-c">Client</span> Robotic Enterprises</p>
-                                    <p><span class="d-text-c">Budget</span> $12000</p>
-                                </div>
-                                <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio-2a.jpg" alt="portfolio" />
-                            </div>
-                        </div>
-                        <div class="col-md-3 no-padding photography">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-hover show-it">
-                                    <h3><a href="#" class="d-text-c-h">User Interface Design</a></h3>
-                                    <p>Design</p><br/>
-                                    <p><span class="d-text-c">Client</span> Robotic Enterprises</p>
-                                    <p><span class="d-text-c">Budget</span> $1500</p>
-                                </div>
-                                <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio-3a.jpg" alt="portfolio" />
-                            </div>
-                        </div>
-                        <div class="col-md-3 no-padding print">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-hover show-it">
-                                    <h3><a href="#" class="d-text-c-h">TypeEd Buysiness Cards</a></h3>
-                                    <p>Print</p><br/>
-                                    <p><span class="d-text-c">Client</span> Robotic Enterprises</p>
-                                    <p><span class="d-text-c">Budget</span> $3000</p>
-                                </div>
-                                <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio-4a.jpg" alt="portfolio" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- === END PORTFOLIO === -->
-
-                <!-- === START OFFER === -->
-                <div class="offer-section" id="offer-section">
-                    <div class="container">
-                        <h1>What also we can offer you</h1>
-                        <div class="offer-featured"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/mac.png" alt="mac" /></div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="offer-box">
-                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/offer-i1.png" alt="icon" />
-                                    <span></span>
-                                    <h3>graphic design</h3>
-                                    <p>Quot lobortis reprehendunt te ius, id usu brute solet quodsi. Modo iusto ne sed, at tollit molestiae eum.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="offer-box">
-                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/offer-i2.png" alt="icon" />
-                                    <span></span>
-                                    <h3>vectorial design</h3>
-                                    <p>Quot lobortis reprehendunt te ius, id usu brute solet quodsi. Modo iusto ne sed, at tollit molestiae eum.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="offer-box">
-                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/offer-i3.png" alt="icon" />
-                                    <span></span>
-                                    <h3>web development</h3>
-                                    <p>Quot lobortis reprehendunt te ius, id usu brute solet quodsi. Modo iusto ne sed, at tollit molestiae eum.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- === END OFFER === -->
-
-                <!-- === START TESTIMONIALS === -->
-                <div class="testimonials-section" id="testimonials-section">
-                    <div class="bg-cover">
-                        <div class="container">
-                            <div class="testimonials-slider" data-theme-plugin="slider" data-theme-item=".testimonial" data-theme-container=".testimonial-wrapper">
-                                <ul class="testimonial-wrapper">
-                                    <li class="testimonial">
-                                        <div class="testimonial-cover">
-                                            <img class="d-border-c" src="<?php echo bloginfo('stylesheet_directory'); ?>/images/avatar-1.jpg" alt="avatar" />
-                                        </div>
-                                        <div class="testimonial-content">
-                                            <h3>Patricia Harris</h3>
-                                            <h5>Umbrela Ltd, CEO</h5>
-                                            <p>Mea eius primis definitiones ut, eu ius meis iusto qualisque. Erat vituperata usu ex, et nam probo etiam. Luptatum scriptorem sed ei, no nec etiam electram, natum perfecto ut sed. Est id possim recusabo, soluta doctus epicuri eu per. Periculis consectetuer pro an, ad pro omnis brute.</p>
-                                        </div>
-                                    </li>
-                                    <li class="testimonial">
-                                        <div class="testimonial-cover">
-                                            <img class="d-border-c" src="<?php echo bloginfo('stylesheet_directory'); ?>/images/avatar-2.jpg" alt="avatar" />
-                                        </div>
-                                        <div class="testimonial-content">
-                                            <h3>Harold Jakens</h3>
-                                            <h5>Umbrela Ltd, Marketing Manager</h5>
-                                            <p>Mea eius primis definitiones ut, eu ius meis iusto qualisque. Erat vituperata usu ex, et nam probo etiam. Luptatum scriptorem sed ei, no nec etiam electram, natum perfecto ut sed. Est id possim recusabo, soluta doctus epicuri eu per. Periculis consectetuer pro an, ad pro omnis brute.</p>
-                                        </div>
-                                    </li>
-                                    <li class="testimonial">
-                                        <div class="testimonial-cover">
-                                            <img class="d-border-c" src="<?php echo bloginfo('stylesheet_directory'); ?>/images/avatar-3.jpg" alt="avatar" />
-                                        </div>
-                                        <div class="testimonial-content">
-                                            <h3>Alicia Marron</h3>
-                                            <h5>Umbrela Ltd, Fron-End Developer</h5>
-                                            <p>Mea eius primis definitiones ut, eu ius meis iusto qualisque. Erat vituperata usu ex, et nam probo etiam. Luptatum scriptorem sed ei, no nec etiam electram, natum perfecto ut sed. Est id possim recusabo, soluta doctus epicuri eu per. Periculis consectetuer pro an, ad pro omnis brute.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="testimonials-dots" data-theme-plugin="bullets">
-                                    <li class="d-border-c d-bg-c-a"></li>
-                                    <li class="d-border-c d-bg-c-a"></li>
-                                    <li class="d-border-c d-bg-c-a"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- === END TESTIMONIALS === -->
-
-                <!-- === START SHOP === -->
-                <div class="shop-section" id="shop-section">
-                    <div class="container">
-                        <div class="site-title">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <h1>What Have You Got There?</h1>
-                                    <h2>Our Goods</h2>
-                                </div>
-                                <div class="col-md-5">
-                                    <h3 class="d-border-c">Vix rebum oblique laboramus ad, prompta reprimique ea eos copiosae appellantur, prompta reprimique. </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="shop-item">
-                                    <div class="item-image">
-                                        <div class="item-hover d-bg-c"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/cart.png" alt="icon" /></div>
-                                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/shop-1.jpg" alt="shop image" />
-                                    </div>
-                                    <span class="center-line"></span>
-                                    <div class="item-details">
-                                        <h3><a class="d-text-c-h" href="<?php echo bloginfo('stylesheet_directory'); ?>/shop-item.html">Nambu cast kettle</a></h3>
-                                        <h5>Kitchen</h5>
-                                        <h6>$265</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="shop-item">
-                                    <div class="item-image">
-                                        <div class="item-hover d-bg-c"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/cart.png" alt="icon" /></div>
-                                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/shop-2.jpg" alt="shop image" />
-                                    </div>
-                                    <span class="center-line"></span>
-                                    <div class="item-details">
-                                        <h3><a class="d-text-c-h" href="<?php echo bloginfo('stylesheet_directory'); ?>/shop-item.html">Cairo wall clock</a></h3>
-                                        <h5>Home Deco</h5>
-                                        <h6>$135</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="shop-item">
-                                    <div class="item-image">
-                                        <div class="item-hover d-bg-c"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/cart.png" alt="icon" /></div>
-                                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/shop-3.jpg" alt="shop image" />
-                                    </div>
-                                    <span class="center-line"></span>
-                                    <div class="item-details">
-                                        <h3><a class="d-text-c-h" href="<?php echo bloginfo('stylesheet_directory'); ?>/shop-item.html">Bufa Chair</a></h3>
-                                        <h5>Office</h5>
-                                        <h6>$455</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- === START SHOP === -->
-
-                <!-- === START PRICING TABLES === -->
-                <div class="pricing-section pricing-tables-v2" id="pricing-section">
-                    <div class="bg-cover">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="pricing-table">
-                                        <h2 class="pricing-table-name">Basic</h2>
-                                        <div class="pricing-table-price">$25</div>
-                                        <ul class="pricing-table-stuff">
-                                            <li>PSD Files</li>
-                                            <li>Web Hosting</li>
-                                            <li>Free Concept</li>
-                                            <li>Updates</li>
-                                            <li>Premium Support</li>
-                                            <li>Troubleshooting</li>
-                                        </ul>
-                                        <p><a href="#" class="button">Buy it now</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pricing-table pricing-popular">
-                                        <h2 class="pricing-table-name">Gold</h2>
-                                        <div class="pricing-table-price">$35</div>
-                                        <ul class="pricing-table-stuff">
-                                            <li>PSD Files</li>
-                                            <li>Web Hosting</li>
-                                            <li>Free Concept</li>
-                                            <li>Updates</li>
-                                            <li>Premium Support</li>
-                                            <li>Troubleshooting</li>
-                                        </ul>                                    
-                                        <p><a href="#" class="button">Buy it now</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pricing-table">
-                                        <h2 class="pricing-table-name">Extra</h2>
-                                        <div class="pricing-table-price">$40</div>
-                                        <ul class="pricing-table-stuff"> 
-                                            <li>PSD Files</li>
-                                            <li>Web Hosting</li>
-                                            <li>Free Concept</li>
-                                            <li>Updates</li>
-                                            <li>Premium Support</li>
-                                            <li>Troubleshooting</li>
-                                        </ul>
-                                        <p><a href="#" class="button">Buy it now</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- === END PRICING TABLES === -->
 
                 <!-- === START BLOG SECTION === -->
                 <div class="blog-section" id="blog-section">
@@ -776,11 +677,11 @@
                         <div class="site-title">
                             <div class="row">
                                 <div class="col-md-7">
-                                    <h1>What Are We Thinking About?</h1>
-                                    <h2>Our Blog</h2>
+                                    <h1>Blog</h1>
+                                    <h2>Mantenha-se informado</h2>
                                 </div>
                                 <div class="col-md-5">
-                                    <h3 class="d-border-c">Vix rebum oblique laboramus ad, prompta reprimique ea eos copiosae appellantur, prompta reprimique. </h3>
+                                    <h3 class="d-border-c">Acomapnhe nosso blog e obtenha informações úteis que podem auxiliar o crescimento da sua empresa.</h3>
                                 </div>
                             </div>
                         </div>
@@ -871,7 +772,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="logo"><a href="#" class="top"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo"/>Rhyno</a></div>
+                            <div class="logo"><a href="#" class="top"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo"/></a></div>
                         </div>
                         <div class="col-md-6">
                             <ul class="socials">
@@ -905,6 +806,7 @@
         <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/wow.js" type="text/javascript"></script>
         <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/knob.js" type="text/javascript"></script>
         <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.counterup.js" type="text/javascript"></script>
+        <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.vide.js" type="text/javascript"></script>
         <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/options.js" type="text/javascript"></script>
         <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/plugins.js" type="text/javascript"></script>
         <script src="<?php echo bloginfo('stylesheet_directory'); ?>/color-box/color-js.js" type="text/javascript"></script>

@@ -159,7 +159,7 @@ jQuery('.contact-form').each(function() {
 // Navigation (A.B.)
 jQuery(function($) {
     function load_navigation() {
-        var menu_links = $('.menu ul li a').filter(function() {
+        var menu_links = $('a[data-anchor]').filter(function() {
             var s = $(this).data('anchor') ? '#' + $(this).data('anchor') : $(this).attr('href');
             if ($(s).length)
                 return true;
