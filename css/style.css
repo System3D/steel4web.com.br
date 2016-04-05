@@ -798,25 +798,46 @@ a {
 /* =========================== VIDEO SECTION ===================== */
 .content{
     top: 0;
+    height: 100%;
 }
 .video-section{
     width: 100%;
     overflow: hidden;
-    position: relative;
-    height: 800px;
+    position: absolute;
+    display: block;
+    background: #191919;
+    color: white;
+    height: 100%;/* para falta de suporte */
+    height: -webkit-calc(100% - 0px);/* para Chrome */
+    height: -moz-calc(100% - 0px);/* para Firefox */
+    height: calc(100% - 0px);/* para suporte nativo */
     min-height: 100%;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 .video-section iframe{
     width: 100%;  
     min-height: 100%;                      
 }
 .video-section .bg{
-    width: 100%;
+    position: absolute;
     margin: 0;
     padding: 0;
-    bottom: 0;
+    left: 50%;
+    top: 50%;
     vertical-align: bottom;
-    /* height: 100%; */
+    background: #333;
+    color: white;
+    /* height: 100%; *//* para falta de suporte */
+    /* height: -webkit-calc(100% - 120px); *//* para Chrome */
+    height: -moz-calc(100% - 120px);/* para Firefox */
+    /* height: calc(100% + 120px); *//* para suporte nativo */
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 }
 .video-section:before{
     background: rgba(0, 0, 0, 0.8);
@@ -844,25 +865,33 @@ a {
 .video-section .bg-cover{
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    min-height: 100%;
-    position: absolute;
+    /* position: absolute; */
     display: block;
     content: " ";
     top:0;
     bottom:0;
+    height: 100%;
+    height: -webkit-calc(100% - 0px);
+    height: -moz-calc(100% - 0px);
+    height: calc(100% - 0px);
+    /* min-height: 100%; */
+    z-index: -1;
 }
 .video-section .slide-text {
     position: absolute;
-    z-index: 13;
+    /* z-index: 13; */
     max-width: 1110px;
     margin: auto;
     left: 0;
     text-align: center;
     right: 0;
-    /* bottom: 0; */
-    top: 25%;
-    display: block;
+    bottom: 0;
+    top: 0;
+    /* display: block; */
     vertical-align: middle;
+    /* border: 3px solid red; */
+    /* float: initial; */
+    height: 398px;
 }
 .video-section .slide-text h2, .video-section .slide-text h1 {
     color: #fff;
@@ -927,7 +956,7 @@ a {
 }
 .intro-icon {
     margin: 0 auto;
-    padding: 0 0 20px 0;
+    padding: 0 0 0px 0;
     width: 50px;
     text-align: center;
     position: absolute;
@@ -1890,8 +1919,13 @@ span.intro-icon a {
 
 /* =========================== START ABOUT ===================== */
 .about-section {
+    margin-top: calc(50%);
+    /* margin-top: 0; */
+    top: calc(100%);
     padding: 80px 0 40px;
     position: relative;
+    /* display: block; */
+    /* clear: both; */
 }
 .white-side {
     padding: 80px 0 40px;
