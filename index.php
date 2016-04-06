@@ -90,23 +90,9 @@
                                                 <li><a class="d-text-c-h" data-anchor="producao-section" href="#">Produção</a></li>
                                                 <li><a class="d-text-c-h" data-anchor="logistica-section" href="#">Logística</a></li>
                                                 <li><a class="d-text-c-h" data-anchor="montagem-section" href="#">Montagem</a></li>
-                                                <li><a class="d-text-c-h" data-anchor="blog-section" href="#">Blog</a></li>                                    
-                    <!-- <li><a class="d-text-c-h" data-anchor="blog-section" href="#">Blog</a>
-                        <ul>
-                            <li><a class="d-text-c-h" href="blog.html">Blog with sidebar</a></li>
-                            <li><a class="d-text-c-h" href="post.html">Blog post</a></li>
-                        </ul>
-                    </li>                                     -->
+                                                <li><a class="d-text-c-h" data-anchor="blog-section" href="#">Blog</a></li>                                                                                      
                     <li><a class="d-text-c-h" data-anchor="contact-section" href="#">Contato</a></li>
-<!--                                     <li>
-                        <i class="fa fa-search d-text-c"></i>
-                        <form class="search-form">
-                            <input type="text" name="s" class="search-line" placeholder="Search...">
-                            <input type="submit" value="" class="search-button">
-                            <i class="fa fa-search d-text-c"></i>
-                        </form>
-                    </li>
-                -->                            </ul>
+                </ul>
             </nav>
         </div>
     </div>
@@ -653,7 +639,7 @@
                     <h2>Mantenha-se informado</h2>
                 </div>
                 <div class="col-md-5">
-                    <h3 class="d-border-c">Acomapnhe nosso blog e obtenha informações úteis que podem auxiliar o crescimento da sua empresa.</h3>
+                    <h3 class="d-border-c">Acomapanhe nosso blog e obtenha informações úteis que podem lhe auxiliar com o crescimento da sua empresa.</h3>
                 </div>
             </div>
         </div>
@@ -661,8 +647,9 @@
             <div class="col-md-4">
                 <div class="blog-entry">
                     <div class="entry-image">
-                        <div class="entry-hover"><a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/post-hover.png" alt="hover image" /></a></div>
-                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/blog-1.jpg" alt="image blog" />
+                        <div class="entry-hover"><a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html">
+                            <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/post-hover.png" alt="hover image" /></a></div>
+                            <img src="http://placehold.it/360x270" alt="image blog" class="img-responsive" />
                     </div>
                     <div class="entry-header">
                         <h3><a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html" class="d-text-c-h">5 Steps of web development</a></h3>
@@ -676,8 +663,12 @@
             <div class="col-md-4">
                 <div class="blog-entry">
                     <div class="entry-image">
-                        <div class="entry-hover"><a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/post-hover.png" alt="hover image" /></a></div>
-                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/blog-2.jpg" alt="image blog" />
+                        <div class="entry-hover">
+                            <a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html">
+                                <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/post-hover.png" alt="hover image" />
+                            </a>
+                        </div>
+                        <img src="http://placehold.it/360x270" alt="image blog" class="img-responsive" />
                     </div>
                     <div class="entry-header">
                         <h3><a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html" class="d-text-c-h">5 Steps of web development</a></h3>
@@ -691,8 +682,12 @@
             <div class="col-md-4">
                 <div class="blog-entry">
                     <div class="entry-image">
-                        <div class="entry-hover"><a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/post-hover.png" alt="hover image" /></a></div>
-                        <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/blog-3.jpg" alt="image blog" />
+                        <div class="entry-hover">
+                            <a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html">
+                                <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/post-hover.png" alt="hover image" />
+                            </a>
+                        </div>
+                        <img src="http://placehold.it/360x270" alt="image blog" class="img-responsive" />
                     </div>
                     <div class="entry-header">
                         <h3><a href="<?php echo bloginfo('stylesheet_directory'); ?>/post.html" class="d-text-c-h">5 Steps of web development</a></h3>
@@ -703,30 +698,61 @@
                     </div>
                 </div>
             </div>
+            <br>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-primary btn-lg">Veja todas</a>
+                ou
+                <a href="#news-section" data-anchor="news-section" class="btn btn-primary btn-lg" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="news-section">Assine nossa Newsletter</a>
+            </div>
+
         </div>
     </div>
 </div>
 <!-- === END BLOG SECTION === -->
 
+<section class="news-section collapse" id="news-section">
+    <div class="bg-cover">        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3></h3>
+                </div>
+                <div class="col-md-8">
+                    <form id="newsletter-form">
+                        <div class="input-group">
+                            <input class="form-control" type="email" placeholder="Digite seu e-mail">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Assinar Newsletter</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+
 <!-- START CONTACT SECTION -->
 <div class="contact-section" id="contact-section">
     <div class="bg-cover">
         <div class="container">                        
-            <h1>Contact us</h1>
+            <h1>Entre em contato</h1>
+            <p>Estamos aqui para lhe ouvir. Fale diretamente conosco através do formulário abaixo.</p>
             <form class="contact-form">
                 <div class="row">
                     <div class="col-md-4">
-                        <input type="text" name="contact-name" class="d-border-c-f contact-form-line" placeholder="Name">
+                        <input type="text" name="contact-name" class="d-border-c-f contact-form-line" placeholder="Seu Nome">
                     </div>
                     <div class="col-md-4">
-                        <input type="text" name="contact-email" class="d-border-c-f contact-form-line" placeholder="Email Address">
+                        <input type="text" name="contact-email" class="d-border-c-f contact-form-line" placeholder="Seu E-mail">
                     </div>
                     <div class="col-md-4">
-                        <input type="text" name="contact-website" class="d-border-c-f contact-form-line" placeholder="Subject">
+                        <input type="text" name="contact-website" class="d-border-c-f contact-form-line" placeholder="Telefone">
                     </div>
                     <div class="col-md-12">
-                        <textarea name="contact-message" class="d-border-c-f contact-form-area" placeholder="Message"></textarea>
-                        <p class="align-center"><input type="submit" value="Send" class="form-send d-border-c d-bg-c"></p>
+                        <textarea name="contact-message" class="d-border-c-f contact-form-area" placeholder="Mensagem"></textarea>
+                        <p class="align-center"><button type="submit" class="form-send d-border-c d-bg-c">Enviar</button></p>
                     </div>
                 </div>
             </form>
@@ -741,27 +767,27 @@
 
 <!-- === START FOOTER === -->
 <footer class="footer">
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="logo"><a href="#" class="top"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo"/></a></div>
-        </div>
-        <div class="col-md-6">
-            <ul class="socials">
-                <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-rss"></i></a></li>
-            </ul>  
-        </div>              
-    </div>  
-</div>
-<div class="bottom-side">
     <div class="container">
-        <p class="copywrite">© Copyright 2014 by GeoThemes. All rights reserved.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="logo"><a href="#" class="top"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo"/></a></div>
+            </div>
+            <div class="col-md-6">
+                <ul class="socials">
+                    <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="d-text-c-h d-border-c-h"><i class="fa fa-rss"></i></a></li>
+                </ul>  
+            </div>              
+        </div>  
     </div>
-</div>
+    <div class="bottom-side">
+        <div class="container">
+            <p class="copywrite">© Copyright <?php echo date('Y') ?> by <a herf="#">System3D</a>. Todos os direitos reservados.</p>
+        </div>
+    </div>
 </footer>
 <!-- === END FOOTER === -->
 </div>

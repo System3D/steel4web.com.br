@@ -1866,17 +1866,20 @@ span.intro-icon a {
 }
 .statistics-section.statistics-section-2 {
     background: url('../images/bg-statistics-2.jpg') top center;
+    background: url('../videos/up/up.jpg') no-repeat center center;
     color: #fff;
 }
 .statistics-section.statistics-section-2 .bg-cover {
-    /* background: rgb(238, 182, 15); */
-    background-image: url('../videos/up/up.jpg');
+    background: rgb(250, 176, 1);
+    /* background-image: url('../videos/up/up.jpg'); */
     background-size: cover;
-    background-color: rgba(224, 14, 14, 0.66);
     background-overlay: multiply;
 }
 
-.bg-cover {}
+.bg-cover {
+    background: #FAB001;
+    padding: 60px 0;
+}
 .statistics-section .bg-cover {
     background: rgba(0,0,0,0.4);
     padding: 80px 0 70px;
@@ -3037,14 +3040,21 @@ span.intro-icon a {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
-    margin: 0 0 50px 0;
+    font-size: 30px;    
+}
+.contact-section .bg-cover p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+.contact-form .contact-form-line {
+    margin-bottom: 30px;
+    margin-top: 60px;
 }
 .contact-form .contact-form-line {
     padding: 0 0 15px 0;
     color: #fff;
     font-size: 16px;
-    margin-bottom: 30px;
     background: none;
     width: 100%;
     font-weight: 400;
@@ -3153,7 +3163,7 @@ footer p {
 footer p.copywrite {
     font-size: 13px;
     text-align: left;
-    color: #4c4c4c;
+    color: #FFFFFF;
     margin: 0;
 }
 footer .socials {
@@ -3166,8 +3176,9 @@ footer .socials li a {
     border: 1px dotted rgba(255,255,255,0.1);
 }
 footer .bottom-side {
-    padding: 20px; 
-    background: #fff;
+    padding: 20px;
+    background: #252525;
+    color: #fff;
 }
 /* =========================== END FOOTER ===================== */
 
