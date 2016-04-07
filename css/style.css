@@ -971,6 +971,14 @@ span.intro-icon a {
 
 /* =========================== VIDEO SECTION ===================== */
 
+/* =========================== RECURSOS SECTION ===================== */
+iframe{
+    margin-top: -30px;
+}
+
+/* =========================== end RECURSOS SECTION ===================== */
+
+
 /* =========================== START VIDEO 2 SECTION ===================== */
 .homepage-hero-module {
     border-right: none;
@@ -1025,9 +1033,32 @@ span.intro-icon a {
 /* =========================== START PRODUCT SECTION ===================== */
 .product-section {
 /*     background: url('../images/bg-custom.jpg') top center no-repeat; */
-/*     background-size: cover;  */
-    padding: 80px 0;
+/*     background-size: cover;  */padding: 0px 0 80px;}
+.product-section .section-title{
+    padding: 0px 0;
+    background: url('https://synchroltd.com/wp-content/uploads/2015/01/parallax11.jpg') no-repeat center center fixed;
+    color: #fff;
+    background-size: cover;
 }
+.product-section .section-title .bg-color{
+    padding: 80px 0;
+    background: rgba(51, 51, 51, 0.9);
+    color: #fff;
+}
+.product-section .section-title:before{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: aqua;
+    /* content: " "; */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    z-index: 141;
+}
+
 .product-section .site-title-2 h2 {
     font-size: 30px;
     line-height: 1em;
@@ -1045,7 +1076,20 @@ span.intro-icon a {
     width: 100%;
 }
 .product-section .features .panel .panel-collapse .panel-body {
-    padding: 15px 15px 15px 60px;
+    padding: 15px 15px 15px 40px;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+.features .panel .panel-collapse .panel-body p{
+    color: #808080;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.features{
+    margin-top: 30px;
 }
 /* =========================== END PRODUCT SECTION ===================== */
 
@@ -1855,7 +1899,33 @@ span.intro-icon a {
     font-size: 16px;
     text-transform: uppercase;
     color: #444;
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
+}
+.offer-section .offer-box p{
+    text-align: left !important;    
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.offer-section .offer-box ul li {
+    text-align: left;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+    list-style: none;
+}
+.offer-section .offer-box ul li:before {
+    /* content: '\f006'; */
+    content: '\f375';
+    /* font-family: 'FontAwesome'; */
+    font-family: 'Ionicons';
+    float: left;
+    margin-left: -25px;
+    color: #FAB719;
+    font-size: 20px;
+    vertical-align: top;
 }
 /* =========================== END OFFER SECTION ===================== */
 
@@ -1932,7 +2002,7 @@ span.intro-icon a {
 }
 .white-side {
     padding: 80px 0 40px;
-    margin: -80px 0 -40px;
+    margin: -80px 0 40px;
 }
 .white-side:after {
     position: absolute;
@@ -3546,4 +3616,10 @@ footer .bottom-side {
 .team-section .white-side, .white-side { margin: 0; padding: 50px 20px; text-align: center; }
 .portfolio-section .dark-side .our-portfolio-filter { margin: 0; padding: 0; text-align: center;}
 .portfolio-section.portfolio-section-2>.row>div { left: 0; right: 0; }
+}
+
+
+
+.features{
+
 }
