@@ -34,7 +34,7 @@
 
 @charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Montserrat:400,700");
-* {
+.bg-cover {
     margin: 0;
     padding: 0;
     border: 0;
@@ -973,7 +973,28 @@ span.intro-icon a {
 
 /* =========================== RECURSOS SECTION ===================== */
 iframe{
-    margin-top: -30px;
+    margin-top: 30px;
+}
+.sidebar-box {
+  max-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar-box .read-more {
+  position: absolute;
+  text-align: center;
+  bottom: 22px;
+  /* left: 0; */
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 100px 0 0px !important;/* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, transparent, #FFFFFF);
+}
+.sidebar-box .read-more a{
+  /* color: #111; */
+  margin: 0px 0px -61px 0px;
+  padding: 10px 50px;
 }
 
 /* =========================== end RECURSOS SECTION ===================== */
@@ -1039,9 +1060,11 @@ iframe{
     background: url('https://synchroltd.com/wp-content/uploads/2015/01/parallax11.jpg') no-repeat center center fixed;
     color: #fff;
     background-size: cover;
+    margin-bottom: 40px;
+    text-align: center;
 }
 .product-section .section-title .bg-color{
-    padding: 80px 0;
+    padding: 160px 0 40px 0;
     background: rgba(51, 51, 51, 0.9);
     color: #fff;
 }
@@ -1874,21 +1897,40 @@ iframe{
     margin: 0 auto 50px;
 }
 .offer-section .offer-box img {
-    margin:0 auto 20px;
+    margin: -70px auto 20px 0;
+    background: #fff;
+    border: 2px solid #D7D7D7;
+    border-radius: 10px;
+    padding: 10px;
+}
+.offer-section .offer-box i.icon {
+    margin: -70px auto 20px auto;
+    font-size: 60px;
+    background: #fff;
+    border: 2px solid #D7D7D7;
+    border-radius: 10px;
+    padding: 10px;
+    vertical-align: middle;
+    height: 80px;
+    width: 80px;
+    color: #FAB001;
+    display: block;
 }
 .offer-section .offer-box span {
-    height: 1px;
-    background: #d7d7d7;
-    width: 60%;
-    display: block;
-    margin: 0 20% 25px;
+    /* height: 1px; */
+    /* background: #d7d7d7; */
+    /* width: 60%; */
+    /* display: block; */
+    /* margin: 0 20% 25px; */
 }
 .offer-section .offer-box {
     padding: 30px;
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 80px;
     border: 2px solid #d7d7d7;
     border-radius: 10px;
+    min-height: 390px;
 }
 .offer-section .offer-box p {
     margin: 0;
@@ -1902,11 +1944,12 @@ iframe{
     margin: 0 0 20px 0;
 }
 .offer-section .offer-box p{
-    text-align: left !important;    
+    text-align: left !important;
     font-size: 16px;
     line-height: 1.5em;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    /* width: 90%; */
 }
 .offer-section .offer-box ul li {
     text-align: left;
@@ -1915,6 +1958,10 @@ iframe{
     font-size: 15px;
     margin-left: 30px;
     list-style: none;
+}
+.offer-section .offer-box ul li:hover {
+    font-weight: bold;
+    cursor: pointer;
 }
 .offer-section .offer-box ul li:before {
     /* content: '\f006'; */
@@ -1937,10 +1984,10 @@ iframe{
 .statistics-section.statistics-section-2 {
     background: url('../images/bg-statistics-2.jpg') top center;
     background: url('../videos/up/up.jpg') no-repeat center center;
-    color: #fff;
+    color: #313131;
 }
 .statistics-section.statistics-section-2 .bg-cover {
-    background: rgb(250, 176, 1);
+    background: rgb(241, 241, 241);
     /* background-image: url('../videos/up/up.jpg'); */
     background-size: cover;
     background-overlay: multiply;
@@ -2003,6 +2050,7 @@ iframe{
 .white-side {
     padding: 80px 0 40px;
     margin: -80px 0 40px;
+    overflow: visible;
 }
 .white-side:after {
     position: absolute;
@@ -2014,9 +2062,10 @@ iframe{
     width: 300%;
 }
 .about-section .about-box-2 {
-    margin-left: 30px;
+    margin-left: 20px;
     position: relative;
     overflow: visible;
+    margin-bottom: 30px;
 }
 .about-section .about-box {
     margin-bottom: 40px;
@@ -2076,20 +2125,21 @@ iframe{
 }
 .about-section .about-box-2 h1 {
     color: #444444;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1em;
     margin: 0 0 5px 0;
 }
 .about-section .about-box-2 .about-box-2-name {
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     right: 0;
     top: 0;
-    margin-top: 70px;
-    padding-left: 60px;
+    margin-top: 50px;
+    padding-left: 0px;
     /* height: 100%; */
+    overflow: visible;
 }
 .about-section .about-box-2 .about-box-2-name .icon-a {
     position: absolute;
@@ -2926,36 +2976,41 @@ iframe{
     line-height: 1.5em;
 }
 .site-title-2 h1 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1em;
     font-weight: 400;
     margin: 0 auto 10px auto;
+    text-transform: uppercase;
 }
 .site-title-2 h2 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1em;
     color: #fff;
     font-weight: 400;
     margin: 0 auto 30px;
+    text-transform: uppercase;
 }
 .site-title-2 h3 {
     color: #FFFFFF;
     position: relative;
-    padding-left: 60px;
+    padding-left: 43px;
     font-size: 18px;
     font-weight: 100;
     line-height: 1.7em;
-    width: 85%;
+    width: 90%;
 }
 .site-title-2 h3 span {
     display: block;
-    width: 30px;
+    width: 25px;
     height: 4px;
     margin-top: 10px;
     position: absolute;
     margin-left: 0px;
     left: 0;
     top: 0;
+}
+.site-title-2 h3 i {
+   color: #FAB001;
 }
 /* =========================== END SITE TITLE ===================== */
 
@@ -3103,7 +3158,7 @@ iframe{
     background-size: cover;
 }
 .contact-section .bg-cover {
-    padding: 80px 0;
+    padding: 220px 0;
     background: rgba(0,0,0,0.5);
 }
 .contact-section .bg-cover h1 {
@@ -3186,21 +3241,20 @@ iframe{
 }
 .socials li {
     display: inline-block;
-    margin: 0 0 0 5px;
-    *zoom: 1;
-    *display: inline;
+    margin: 0 10px 0 0px;*zoom:1;*
+    display: inline;
 }
 .socials li a {
     display: block;
     text-align: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     border: 1px dotted rgba(0,0,0,0.1);
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1em;
     color: #808080;
-    padding-top: 11px;
+    padding-top: 6px;
 }
 .socials.light li a {
     color: #fff;
@@ -3210,9 +3264,10 @@ iframe{
 
 /* =========================== START FOOTER ===================== */
 footer {
-    background: #000;
-    padding: 50px 0 0;
+    background: #151414;
+    padding: 35px 0 0;
     color: #fff;
+    padding: 0;
 }
 footer .widget {
     margin-bottom: 0px;
@@ -3223,7 +3278,7 @@ footer .widget .widget-title {
 footer .logo a {
     color: #fff;
     text-transform: uppercase;
-    margin: 0 0 20px 0;
+    margin: 0 0 0px 0;
 }
 footer p {
     color: #fff;
@@ -3232,18 +3287,21 @@ footer p {
 }
 footer p.copywrite {
     font-size: 13px;
-    text-align: left;
+    /* text-align: left; */
     color: #FFFFFF;
     margin: 0;
 }
+footer p.copywrite a{
+    color: #0161ae;
+}
 footer .socials {
-    text-align: right;
+    text-align: left;
     padding: 0;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 footer .socials li a {
     color: #fff;
-    border: 1px dotted rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
 }
 footer .bottom-side {
     padding: 20px;
